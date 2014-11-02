@@ -88,16 +88,3 @@ def calculateWeights(dataSet):
 
 	return weights
 
-data, slope, intercept = buildDataSet()
-plotDataSet(data, slope, intercept)
-
-X, y = extract(data)
-x1 = X[:, 0]**2
-x2 = X[:, 1]**2
-X = np.column_stack((x1, x2))
-X = addIntercept(X)
-data = np.column_stack((X, y))
-
-w = calculateWeights(data)
-
-print w
