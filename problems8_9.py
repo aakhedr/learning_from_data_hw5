@@ -1,4 +1,3 @@
-import numpy as np 
 from helpers import *
 
 num_trials = 100
